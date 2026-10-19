@@ -1,0 +1,389 @@
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: #232323;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    padding: 10px 30px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto 0 0;
+    white-space: nowrap;
+}
+
+#logo img {
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+}
+
+#menu {
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 25px;
+    color: inherit;
+    padding: 8px;
+}
+
+#main-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav li {
+    list-style: none;
+}
+
+#main-nav a {
+    white-space: nowrap;
+}
+
+#button-user {
+    padding: 10px 14px;
+    border-radius: 30px;
+    border: 1px solid #4f46e5;
+    color: #4f46e5;
+    background: #fff;
+    white-space: nowrap;
+}
+
+#theme {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    background: #fff;
+    color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+#middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 20px;
+}
+
+#middle h1 {
+    color: #4f46e5;
+    font-size: clamp(32px, 5vw, 44px);
+}
+
+#middle h1 > i,
+#bottom-title i,
+.section-title i {
+    color: rgb(140, 17, 248);
+}
+
+#middle p,
+#need p {
+    color: #777;
+    line-height: 1.7;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0 20px;
+}
+
+.buttons-middle1,
+.buttons-middle2 {
+    border-radius: 70px;
+    padding: 12px 25px;
+    font-weight: bold;
+}
+
+.buttons-middle1 {
+    background: rgb(140, 17, 248);
+    color: white;
+    border: 0;
+}
+
+.buttons-middle2 {
+    background: white;
+    border: 2px solid #aaa;
+    color: #232323;
+}
+
+#need {
+    padding: 65px 20px 20px;
+    text-align: center;
+}
+
+#bottom-title {
+    margin: 20px 0 0;
+    font-size: 30px;
+}
+
+#cards,
+#test {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.sub {
+    background: #dbdaf240;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.sub > i {
+    font-size: 36px;
+    color: rgb(140, 17, 248);
+}
+
+.sub p {
+    color: #777;
+    line-height: 1.6;
+}
+
+.section-title {
+    text-align: center;
+    margin: 70px 20px 0;
+    font-size: 30px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.user i,
+.quote-icon {
+    color: #4f46e5;
+    font-size: 24px;
+}
+
+.user h3 {
+    margin: 0;
+}
+
+.user span {
+    color: #777;
+    font-size: 14px;
+}
+
+
+#acc {
+    text-align: center;
+    padding: 45px 25px;
+    width: min(600px, calc(100% - 40px));
+    margin: 80px auto;
+    border-radius: 30px;
+    color: white;
+    background: #4f46e5;
+}
+
+#acc h3 {
+    font-size: 26px;
+}
+
+#acc p {
+    color: white;
+}
+
+#register a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #4f46e5;
+}
+
+
+footer {
+    background: #2c2c2c;
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer article {
+    display: flex;
+    gap: 20px;
+}
+
+footer a,
+footer i,
+footer p {
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+body.dark {
+    background: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.dark #nav-bar,
+.dark #main-nav {
+    background: #1e1e1e;
+}
+
+.dark #button-user,
+.dark #theme,
+.dark .buttons-middle2 {
+    background: #2c2c2c;
+    color: white;
+}
+
+.dark .sub {
+    background: #2c2c2c;
+}
+
+.dark #middle p,
+.dark #need p,
+.dark .sub p,
+.dark .user span {
+    color: #ccc;
+}
+
+
+@media (max-width: 719px) {
+    #nav-bar {
+        justify-content: space-between;
+        padding: 10px 18px;
+        gap: 12px;
+    }
+
+    #logo {
+        margin-right: auto;
+        padding: 0;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+        padding: 8px 20px 20px;
+    }
+
+    #main-nav.open {
+        display: block;
+    }
+
+    #main-nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        padding: 12px 0;
+    }
+
+    #main-nav li,
+    #main-nav a {
+        width: 100%;
+    }
+
+    #main-nav a {
+        display: block;
+        padding: 5px 0;
+    }
+
+    #button-user {
+        width: 100%;
+    }
+
+    #theme {
+        margin: 0 auto;
+    }
+
+    #cards,
+    #test {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #middle {
+        margin-top: 55px;
+    }
+
+    .desktop-break {
+        display: none;
+    }
+}
+
+
+@media (min-width: 720px) and (max-width: 1000px) {
+    #main-nav ul {
+        gap: 14px;
+    }
+
+    #nav-bar {
+        padding: 10px 18px;
+    }
+
+    #cards,
+    #test {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

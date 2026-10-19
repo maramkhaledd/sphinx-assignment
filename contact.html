@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form Validation
+        </title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <div id="form-card">
+            <div id="form-title">
+                <h1>Contact us</h1>
+                <div id="subtitle">
+                     <p>Fill in your information</p> 
+                </div>
+              
+            </div>
+    
+            <form>
+                <div id="form-sec">
+                    <label>Full Name</label>
+                    <input class="forminputs" type="text" placeholder="enter your full name" name="fullname">
+                    <p class="messages"></p>
+                </div>
+
+                <div id="form-sec">
+                    <label>Email</label>
+                    <input class="forminputs" type="text" placeholder="enter your email" name="email">
+                    <p class="messages"></p>
+                </div>
+                
+              
+                <button type="button" onclick="inputcheck()">Submit</button>
+            </form>
+
+        </div>
+        <script src="forms.js"></script>
+    </body>
+
+</html>
